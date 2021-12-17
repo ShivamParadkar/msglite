@@ -8,7 +8,7 @@ const app = express();
 const path = require('path');
 const io = require('socket.io')(8000);
 
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, './public')));
 
 app.get('/', (req, res)=>{
     res.render('index.html');
